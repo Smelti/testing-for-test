@@ -1,5 +1,5 @@
 import loadUser from "../loaderUser"; //подгружаем
-import { httpGet } from "../http"; //загрушка
+import httpGet from "../http"; //заглушка
 jest.mock('../http') //именно этот файл должен стать моком
 
 beforeEach(() => {

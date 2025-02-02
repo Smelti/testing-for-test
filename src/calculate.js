@@ -1,4 +1,4 @@
-export function calculateTotal(purchases,applyDiscount) { ///аппли дискаунт - уменьшит стоимость на процент
+export default function calculateTotal(purchases,applyDiscount) { ///аппли дискаунт - уменьшит стоимость на процент
    
     const sum = purchases.reduce((total,item) => {
         return total + (item.count * item.price)

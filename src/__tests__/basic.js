@@ -1,4 +1,4 @@
-import { calculateTotal } from "../calculate.js"
+import calculateTotal from "../calculate"
 // const {calculateTotal} = require('../src/calculate.js')
 
 test('basic test', () => {
