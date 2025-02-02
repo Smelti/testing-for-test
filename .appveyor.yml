@@ -1,12 +1,12 @@
-image: Unbunu1804 # образ для сборки
+image: Ubuntu1804 # образ для сборки
 stack: node 12 # окружение
 branches:
   only:
     - master # ветка git
-cahe: node_modules # откуда кеширование
+cache: # Исправлено (было "cahe")
+  - node_modules # что кешировать
 install:
   - npm install # команда установки зависимостей
-build: off #не используется сборка
-test_scipt:
-  - npm run lint && npm test # скрипт сборки
-  
+build: off # не используется сборка
+test_script: # Исправлено (было "test_scipt")
+  - npm run lint && npm test # скрипт тестирования
